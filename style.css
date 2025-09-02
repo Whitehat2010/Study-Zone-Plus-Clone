@@ -1,0 +1,494 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  transition: all 0.2s ease-in-out;
+}
+
+body,
+html {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffffffc3;
+  backdrop-filter: blur(5px);
+  scroll-behavior: smooth;
+}
+
+.nav-tittle-img {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 10px;
+}
+
+.nav-bar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff3f;
+  backdrop-filter: blur(10px);
+}
+
+.nav-list ul {
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+}
+
+.nav-tittle-img img {
+  position: relative;
+  top: -8px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  font-weight: 450;
+}
+
+.button-sign {
+  position: relative;
+  top: -4px;
+  margin: 0 50px 0 0;
+}
+
+.button-sign button {
+  padding: 4px 7px;
+  font-size: 16px;
+  background-color: blue;
+  border: 2px solid #904c99eb;
+  border-radius: 5px;
+}
+
+/* decorrating the main section 1 */
+
+#Home {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle1 {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  z-index: -9999;
+  top: 100px;
+
+  background: radial-gradient(#ca6dca, #e908da);
+  border-radius: 50%;
+}
+.circle2 {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  z-index: -99999;
+  top: 70vh;
+  left: 70vw;
+  background: radial-gradient(#033f5a7e, #3300ff);
+  border-radius: 50%;
+}
+.circle3 {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  z-index: -999;
+  top: 5vh;
+  left: 85vw;
+  background: radial-gradient(#033f5a7e, #3300ff);
+  border-radius: 50%;
+}
+
+.img-Home {
+  background-color: #ffffff89;
+
+  backdrop-filter: blur(10px);
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.img-Home img {
+  object-fit: contain;
+  position: relative;
+}
+
+.contanier-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contanier-home .text-Home {
+  width: 50vw;
+}
+
+.text-Home h1 {
+  font-size: 42px;
+}
+.text-Home h3 {
+  font-size: 34px;
+}
+
+.text-Home p {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.button {
+  padding: 7px 13px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  outline: 2px solid #000;
+  margin: 20px 5px;
+  color: #ffffff;
+}
+#Apply {
+  background-color: #3300ff;
+}
+
+#Discover {
+  background-color: #ffffff;
+  color: #000000;
+}
+#bars {
+  display: none;
+  font-size: 24px;
+}
+aside {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  min-height: 50vh;
+  background-color: #d0d0d07b;
+  width: 100%;
+  z-index: 999999;
+}
+
+.navbar-aside .nav-item {
+  text-align: center;
+  line-height: 2;
+  list-style: none;
+}
+
+/* medias for section home  */
+
+@media (max-width: 1396px) {
+  #Tags {
+    display: none;
+  }
+  #Services {
+    display: none;
+  }
+}
+
+@media (max-width: 1204px) {
+  .contanier-home {
+    flex-direction: column;
+  }
+  .text-Home {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 935px) {
+  #Events {
+    display: none;
+  }
+  #Blog {
+    display: none;
+  }
+  .circle1 {
+    height: 100px;
+    width: 100px;
+  }
+  .circle2 {
+    height: 100px;
+    width: 100px;
+  }
+  .circle3 {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.con-bar-sign {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 772px) {
+  .nav-list ul {
+    display: none;
+  }
+  #bars {
+    display: block;
+  }
+  .text-Home h1,
+  .text-Home h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 600px) {
+  .img-Home,
+  .img-Home img {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    margin: 0 0 10px 0;
+  }
+}
+
+a:hover {
+  color: #3300ff;
+  cursor: pointer;
+}
+
+/* Done the hero section but I unable to make the nav bar sitky and scale in the hover in a   */
+
+/* starting the about section  */
+
+#Aboutt {
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.heading-About h3 {
+  font-size: 34px;
+  text-align: center;
+}
+
+.text-About {
+  padding: 3% 0 2% 8%;
+  width: 40vw;
+  font-size: 12px;
+  height: 100%;
+}
+.img-About {
+  padding: 30px 0 20px 8px;
+  width: 40vw;
+  height: 70vh;
+  overflow-y: scroll;
+  margin: auto 0;
+}
+.img-About ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.img-About ul {
+  list-style: none;
+}
+.img-About img {
+  height: 100px;
+  border-radius: 6px;
+}
+
+.con-img-tect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-About a {
+  color: #002fff;
+}
+
+@media (max-width: 821px) {
+  #hidee-about {
+    display: none;
+  }
+}
+
+/* done but do not able to remove the triangle of scrolling  */
+
+/* Strarting the Coursces  */
+
+#Coursess {
+  min-height: 100%;
+  text-align: center;
+  margin: 0 0 0px 0;
+}
+
+#Courses h2 {
+  font-size: 64px;
+  
+}
+
+.con-corse ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.item-course {
+  height: 250px;
+  width: 250px;
+  background-color: #ffffff;
+  border: 2px solid #000;
+  font-size: 9px;
+  border-radius: 6px;
+  text-align: center;
+}
+.item-course span {
+  font-size: 15px;
+  font-weight: 600;
+}
+.item-course button {
+  margin: 10px 0;
+  padding: 3px 6px;
+  font-size: 10px;
+  color: #ffffff;
+  background-color: #002fff;
+  outline: 1px solid #00000072;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* all done  */
+/* starting the Events section  */
+
+#Evennts {
+  height: 100vh;
+  width: 100%;
+}
+.container-Ev {
+  height: 100%;
+  width: 100%;
+  background: url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fffffff1;
+  font-size: 64px;
+}
+
+.heading-ev {
+  text-align: center;
+}
+.heading-ev p {
+  text-align: center;
+  font-size: 12px;
+}
+
+/* done but i dont make so much fantaists  */
+/* Starting the srvices sectiion  */
+
+#Servicess {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-item-se {
+  height: 250px;
+  width: 200px;
+  background-color: #ffffff;
+  border-radius: 9px;
+  padding: 20px 0 0 10px;
+  border: 2px solid #000;
+}
+
+.cirle {
+  height: 40px;
+  width: 40px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #18006d;
+  margin-bottom: 12px;
+}
+.list-item-se p {
+  font-size: 12px;
+}
+
+.list-item-se button {
+  background: transparent;
+  border: none;
+  outline: 2px solid #1b199b;
+  padding: 3px 6px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.con-div-ser ul{
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.up-text-ser{
+  text-align: center;
+  margin: 10px 0 50px 0;
+}
+.up-text-ser h2{
+ font-size: 34px;
+}
+
+/* done but not satisfied  */
+/* starting footer  */
+
+
+footer{
+  height: 60vh;
+  width: 100%;
+  background-color: #0d8b7e;
+  margin-top: 20px;
+}
+.lists-fo ul{
+  
+  height: 30%;
+  padding: 30px;
+
+}
+
+.lists-fo a{
+  text-decoration: none;
+  color: #000;
+}
+.container-ffo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icon-foo{
+  margin: 0 0 0 10px;
+}
+
+.copyri{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+}
